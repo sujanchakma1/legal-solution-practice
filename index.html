@@ -4,8 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legal Solution Practice</title>
+  <!-- DaisyUI and tailwind css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- poppin fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Garamong fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <style>
+    .poppins-fonts {
+     font-family: "Poppins", serif;
+    }
+    .eb-garamond-fonts {
+     font-family: "EB Garamond", serif;
+    }
+  </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beguni: '#B68C5A',
+              Dark: '#707070',
+            }
+          }
+        }
+      }
+    </script>
+
 </head>
-<body>
-  
+<body class="poppins-fonts">
+  <!-- navvar -->
+  <header class="lg:mx-auto md:mx-auto">
+    <div class="navbar flex justify-around lg:my-8 md:my-8">
+      <div class="">
+        <img class="mr-3" src="./images/Group 1.png" alt="">
+        <a class="font-bold text-4xl eb-garamond-fonts">Justice</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 Dark">
+          <li><a>Home</a></li>
+          <li><a>Services ></a></li>
+          <li><a>Cases ></a></li>
+          <li><a>Blog ></a></li>
+          <li><a>Contact us ></a></li>
+        </ul>
+      </div>
+      <div class="">
+      <a class="bg-beguni text-white btn font-semibold">Free Consultation</a>
+      </div>
+    </div>
+
+    <!-- banner section -->
+  <div class="hero xl::px-60 xl::py-28 poppins-fonts lg:h-screen md:h-screen md:bg-center lg:bg-cover md:bg-cover mx-auto lg:w-10/12 md:w-8/12 sm:w-10/12 rounded-2xl" 
+    style="background-image: url(./images/banner.png);">
+    <div class="text-neutral-content text-center ">
+      <div class="max-w-md lg:mt-0  ">
+        <h1 class="mb-5 text-5xl font-bold eb-garamond-fonts">We Provide Effective Legal Solutions</h1>
+        <p class="mb-5">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+        </p>
+        <div class="md:flex md:space-x-2 justify-center">
+          <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs" />
+          <button class="btn bg-beguni text-white border-0">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
 </body>
 </html>
